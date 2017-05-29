@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "node-dbf": "^0.2.1"
+  }
+}
