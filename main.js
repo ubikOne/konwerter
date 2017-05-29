@@ -1,4 +1,7 @@
 const fs = require('fs');
+const makeArray = require('./modules/makeArray');
+const whiteSpace = require('./modules/whiteSpace');
+const dest = require('./modules/destination');
 
 function main() {
   var kontrahenci =  makeArray('./txt/kontrahenci.txt');
@@ -14,37 +17,3 @@ function main() {
 };
 
 main();
-
-function makeArray(src) {
-  this.inputArray = [];
-  this.outputArray = [];
-  this.source = fs.readFileSync(src).toString().split('\n'||'\r');
-  for (var i = 0; i < this.source.length; i++) {
-    this.inputArray[i] = new Array(this.source[i]);
-  };
-  for (var i = 0; i < this.source.length; i++) {
-    this.outputArray[i] = this.inputArray[i].toString().split(',');
-  };
-  return this.outputArray;
-};
-
-function whiteSpace(count) {
-  this.space = ' ';
-  for (var i = 0; i < count; i++) {
-    this.space = this.space + ' ';    
-  };
-  return this.space;
-};
-
-function dest(dest, text) {
-  this.destFile = fs.appendFile(dest, text, (err) => {
-    if (err) {
-      console.log(err);
-    };
-  });
-};
-
-function input(name, src) {
-  name = fs.readFileSync(src).toString().split('\n'||'\r');
-  return name;
-}
