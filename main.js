@@ -4,6 +4,7 @@ const makeArray  = require('./modules/makeArray');
 const whiteSpace = require('./modules/whiteSpace');
 const dest       = require('./modules/destination');
 const slicer     = require('./modules/slicer');
+const chceck     = require('./modules/check')
 
 function main() {
   var kontrahenci =  makeArray('./txt/kontrahenci.txt');
@@ -15,6 +16,11 @@ function main() {
     this.lengthName = kontrahenci[i][1].length;
     this.lengthAdress = kontrahenci[i][2].length;
     this.lengthNip = kontrahenci[i][3].length;
+    chceck('./log/nazwa.txt', 'Kontrahent o zbyt długiej nazwie: '+kontrahenci[i][1]+'\n', this.lengthName, this.countName);
+    chceck('./log/adres.txt', 'Kontrahent o zbyt długim adresie: '+kontrahenci[i][1]+' '+kontrahenci[i][2]+'\n', this.lengthAdress, this.countAdress);
+    if (this.lengthNip != this.countNip) {
+      dest('./log/nip.txt', 'Kontrahent o nie prawidłowym nipie: '+kontrahenci[i][1]+' '+kontrahenci[i][3]+'\n')
+    };
     slicer(kontrahenci[i][1], this.lengthName, this.countName);
     slicer(kontrahenci[i][2], this.lengthAdress, this.countAdress);
     for (var j = 0; j < this.countName - this.lengthName; j++) {

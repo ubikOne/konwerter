@@ -3,6 +3,9 @@ dbf/*.dbf
 dbf/*.fpt
 txt/kontrahenci.txt
 output/kontr.txt
+log/adres.txt
+log/nazwa.txt
+log/nip.txt
 
 # Created by https://www.gitignore.io/api/node,windows,visualstudiocode
 
