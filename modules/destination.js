@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 module.exports = function(dest, text) {
   this.destFile = fs.appendFile(dest, text, (err) => {
     if (err) {

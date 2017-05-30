@@ -1,4 +1,8 @@
 
+dbf/*.dbf
+dbf/*.fpt
+txt/kontrahenci.txt
+
 # Created by https://www.gitignore.io/api/node,windows,visualstudiocode
 
 ### Node ###
