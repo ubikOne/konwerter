@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "codepage": "^1.8.1",
     "node-dbf": "^0.2.1"
   }
 }
