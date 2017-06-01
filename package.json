@@ -2,5 +2,23 @@
   "dependencies": {
     "codepage": "^1.8.1",
     "node-dbf": "^0.2.1"
-  }
+  },
+  "name": "konwerter",
+  "description": "1. kodowanie Polskich znaków\r 2. rozrachunki\r 3. artykuły",
+  "version": "0.0.1",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubikOne/konwerter.git"
+  },
+  "author": "Bartek 'ubikOne' Błażejewski",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ubikOne/konwerter/issues"
+  },
+  "homepage": "https://github.com/ubikOne/konwerter#readme"
 }
