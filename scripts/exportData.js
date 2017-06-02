@@ -45,4 +45,7 @@ module.exports = {
       dest('./output/kontr.txt', outputfile);      
     };
   },
+  artykuly: function() {
+    
+  },
 };

@@ -6,9 +6,10 @@ const dest        = require('./modules/destination');
 const slicer      = require('./modules/slicer');
 const chceck      = require('./modules/check');
 const spacer      = require('./modules/spacer');
-const kontrahent  = require('./scripts/kontrahenci');
+const exportData  = require('./scripts/exportData');
 const dbfExtract  = require('./scripts/bdfExtract')
 
 dbfExtract.kontrahenciExportDbf();
 dbfExtract.artykulyExportDbf();
-kontrahent.kontrahenci();
+exportData.kontrahenci();
+exportData.artykuly();
